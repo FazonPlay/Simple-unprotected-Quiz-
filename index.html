@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+  <div class="row mt-2">
+    <div class="col">
+      <div id="progress" class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width: 0%">0%</div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button
+              class="nav-link active"
+              id="question-1-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#question-1-content"
+              type="button"
+              role="tab"
+              aria-controls="question-1-content"
+              aria-selected="true"
+      >
+        Question 1
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+              class="nav-link"
+              id="question-2-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#question-2-content"
+              type="button"
+              role="tab"
+              aria-controls="question-2-content"
+              aria-selected="false"
+              disabled
+
+      >
+        Question 2
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+              class="nav-link"
+              id="question-3-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#question-3-content"
+              type="button"
+              role="tab"
+              aria-controls="question-3-content"
+              aria-selected="false"
+              disabled
+      >
+        Question 3
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+              class="nav-link"
+              id="question-4-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#question-4-content"
+              type="button" role="tab"
+              aria-controls="question-4-content"
+              aria-selected="false"
+              disabled
+      >
+        Question 4
+      </button>
+    </li>
+      <li class="nav-item" role="presentation">
+        <button
+                class="nav-link"
+                id="question-5-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#question-5-content"
+                type="button" role="tab"
+                aria-controls="question-5-content"
+                aria-selected="false"
+                disabled
+        >
+          Question 5
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+                class="nav-link"
+                id="question-6-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#question-6-content"
+                type="button" role="tab"
+                aria-controls="question-6-content"
+                aria-selected="false"
+                disabled
+        >
+          Question 6
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+                class="nav-link"
+                id="question-7-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#question-7-content"
+                type="button" role="tab"
+                aria-controls="question-7-content"
+                aria-selected="false"
+                disabled
+        >
+          Question 7
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+                class="nav-link"
+                id="question-8-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#question-8-content"
+                type="button" role="tab"
+                aria-controls="question-8-content"
+                aria-selected="false"
+                disabled
+        >
+          Question 8
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+                class="nav-link"
+                id="question-9-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#question-9-content"
+                type="button" role="tab"
+                aria-controls="question-9-content"
+                aria-selected="false"
+                disabled
+        >
+          Question 9
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+                class="nav-link"
+                id="question-10-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#question-10-content"
+                type="button" role="tab"
+                aria-controls="question-10-content"
+                aria-selected="false"
+                disabled
+        >
+          Question 10
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+                class="nav-link"
+                id="results-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#results-content"
+                type="button" role="tab"
+                aria-controls="results-content"
+                aria-selected="false"
+        >
+          Résultats
+        </button>
+      </li>
+  </ul>
+    <div class="tab-content" id="myTabContent">
+
+        <div
+                class="tab-pane fade show active"
+                id="question-1-content"
+                role="tabpanel"
+                aria-labelledby="question-1-tab"
+                tabindex="0"
+        >
+          <form id="form-question-1">
+            <div class="mb-3">
+              <label>What is the main function of a PSU (Power Supply Unit)?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-1" id="question-1-power" value="true">
+                <label class="form-check-label" for="question-1-power">
+                  To power all components
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-1" id="question-1-cooling" value="false">
+                <label class="form-check-label" for="question-1-cooling">
+                  To cool the CPU
+                </label>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div
+                class="tab-pane fade"
+                id="question-2-content"
+                role="tabpanel"
+                aria-labelledby="question-2-tab"
+                tabindex="0"
+        >
+          <form id="form-question-2">
+            <div class="mb-3">
+              <label>Which socket type is used for AMD Ryzen processors</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-2" id="question-2-am" value="true">
+                <label class="form-check-label" for="question-2-am">
+                  AM4/5
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-2" id="question-2-lga" value="false" >
+                <label class="form-check-label" for="question-2-lga">
+                  LGA 1151/1200/1700
+                </label>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div
+                class="tab-pane fade"
+                id="question-3-content"
+                role="tabpanel"
+                aria-labelledby="question-3-tab"
+                tabindex="0"
+        >
+          <form id="form-question-3">
+            <div class="mb-3">
+              <label>What does NVMe stand for in NVMe SSDs?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-3" id="question-3-nvme" value="true">
+                <label class="form-check-label" for="question-3-nvme">
+                  Non-Volatile Memory Express
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-3" id="question-3-nvmewrong" value="false">
+                <label class="form-check-label" for="question-3-nvmewrong">
+                  Non-Verified Memory Extension
+                </label>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div
+                class="tab-pane fade"
+                id="question-4-content"
+                role="tabpanel"
+                aria-labelledby="question-4-tab"
+                tabindex="0"
+        >
+
+          <form id="form-question-4">
+            <div class="mb-3">
+              <label>Which type of RAM is the more modern as of 2024?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-4" id="question-4-ddr4" value="false">
+                <label class="form-check-label" for="question-4-ddr4">
+                  DDR4
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-4" id="question-4-ddr5" value="true">
+                <label class="form-check-label" for="question-4-ddr5">
+                  DDR5
+                </label>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div
+                class="tab-pane fade"
+                id="question-5-content"
+                role="tabpanel"
+                aria-labelledby="question-5-tab"
+                tabindex="0"
+        >
+
+          <form id="form-question-5">
+            <div class="mb-3">
+              <label>Which GPU company holds over 80% of the market share for graphics cards?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-5" id="question-5-nvidia" value="true">
+                <label class="form-check-label" for="question-5-nvidia">
+                  NVIDIA
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-5" id="question-5-amd" value="false" >
+                <label class="form-check-label" for="question-5-amd">
+                  AMD
+                </label>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+        <div
+                class="tab-pane fade"
+                id="question-6-content"
+                role="tabpanel"
+                aria-labelledby="question-6-tab"
+                tabindex="0"
+        >
+
+          <form id="form-question-6">
+            <div class="mb-3">
+              <label>What is the main purpose of thermal paste?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-6" id="question-6-heat" value="true">
+                <label class="form-check-label" for="question-6-heat">
+                  To improve heat transfer between CPU and cooler
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-6" id="question-6-noise" value="false">
+                <label class="form-check-label" for="question-6-noise">
+                  To reduce noise
+                </label>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+        <div
+                class="tab-pane fade"
+                id="question-7-content"
+                role="tabpanel"
+                aria-labelledby="question-7-tab"
+                tabindex="0"
+        >
+
+          <form id="form-question-7">
+            <div class="mb-3">
+              <label>What does "BIOS" stand for?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-7" id="question-7-bios" value="true">
+                <label class="form-check-label" for="question-7-bios">
+                  Basic Input Output System
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-7" id="question-7-bioswrong" value="false">
+                <label class="form-check-label" for="question-7-bioswrong">
+                  Binary Integrated Operating System
+                </label>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+        <div
+                class="tab-pane fade"
+                id="question-8-content"
+                role="tabpanel"
+                aria-labelledby="question-8-tab"
+                tabindex="0"
+        >
+
+          <form id="form-question-8">
+            <div class="mb-3">
+              <label>What is the primary advantage of an SSD over an HDD</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-8" id="question-8-speed" value="true">
+                <label class="form-check-label" for="question-8-speed">
+                  Faster read/write speeds
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-8" id="question-8-storage" value="false">
+                <label class="form-check-label" for="question-8-storage">
+                  Larger storage capacity
+                </label>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+        <div
+                class="tab-pane fade"
+                id="question-9-content"
+                role="tabpanel"
+                aria-labelledby="question-9-tab"
+                tabindex="0"
+        >
+
+          <form id="form-question-9">
+            <div class="mb-3">
+              <label>What does the term "overclocking" refer to?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-9" id="question-9-clockspeed" value="true">
+                <label class="form-check-label" for="question-9-clockspeed">
+                  Running a CPU or GPU faster than its base speed
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-9" id="question-9-watts" value="false">
+                <label class="form-check-label" for="question-9-watts">
+                  Increasing the power supply wattage
+                </label>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+        <div
+                class="tab-pane fade"
+                id="question-10-content"
+                role="tabpanel"
+                aria-labelledby="question-10-tab"
+                tabindex="0"
+        >
+
+          <form id="form-question-10">
+            <div class="mb-3">
+              <label>Which component is responsible for rendering graphics in games?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-10" id="question-10-gpu" value="true">
+                <label class="form-check-label" for="question-10-gpu">
+                  GPU
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question-10" id="question-10-CPU" value="false">
+                <label class="form-check-label" for="question-10-CPU">
+                  CPU
+                </label>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+        <div
+                class="tab-pane fade"
+                id="results-content"
+                role="tabpanel"
+                aria-labelledby="question-10-tab"
+                tabindex="0"
+        >
+          <div style="width: 50%; margin: auto; text-align: center;">
+            <canvas id="my-chart" width="400" height="400"></canvas>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+  <div class="mt-2 d-flex justify-content-between">
+    <div>
+      <button class="btn btn-primary" type="button" id="previous-btn">Go Back</button>
+    </div>
+    <div>
+      <button class="btn btn-primary" type="button" id="next-btn">Next</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossOrigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
