@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         activeChart = new Chart(chart, {
             type: 'doughnut',
             data: {
-                labels: ['Red', 'Blue'],
+                labels: ['Correct Answers', 'Incorrect Answers'],
                 datasets: [{
                     label: 'Results',
                     data: [correct, incorrect],
